@@ -1,0 +1,20 @@
+﻿<Window x:Class="O1Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:O1Calculator"
+        mc:Ignorable="d"
+        Title="Calculator" Height="450" Width="800">
+    <Grid Height="420" Width="800">
+        <TextBox Name="txbFirstNum" FontSize="24" Margin="235,33,317,339" Padding="5" Text="1"></TextBox>
+        <TextBox Name="txbSecondNum" FontSize="24" Margin="235,94,317,278" Padding="5" Text="2"></TextBox>
+        <TextBlock Name="lblFirstText" FontSize="24" Margin="29,33,613,339" Padding="5">First Number</TextBlock>
+        <Label Name ="lblSecondText" FontSize="24" Content="Second Number" Margin="29,94,586,278" Padding="5"></Label>
+        <Button Margin="287,183,360,193" Content="Click Here!!" FontSize="24" Click="Button_Click"/>
+        <Label Name="lblResult_Sum" FontSize="24" Margin="67,251,441,118"></Label>
+        <Label x:Name="lblResult_Difference" FontSize="24" Margin="442,251,66,118"/>
+        <Label x:Name="lblResult_Product" FontSize="24" Margin="67,324,441,38"/>
+        <Label x:Name="lblResult_Division" FontSize="24" Margin="442,324,66,38"/>
+    </Grid>
+</Window>
